@@ -126,17 +126,20 @@ section {
   font-size: 1.15rem;
 }
 
+.top-week .row,
 .new-films .row {
   margin-left: -7.5px;
   margin-right: -7.5px;
 }
 
+.top-week-item,
 .new-films-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
+.top-week-item .thumbnail,
 .new-films-item .thumbnail {
   margin-bottom: 0;
   -webkit-transition: background-color 0.25s ease;
@@ -144,11 +147,13 @@ section {
   transition: background-color 0.25s ease;
 }
 
+.top-week-item .caption,
 .new-films-item .caption {
   text-align: center;
   height: 40px;
 }
 
+.top-week-item__title,
 .new-films-item__title {
   margin: 0;
   font-size: 1rem;
@@ -161,6 +166,7 @@ section {
      text-overflow: ellipsis;
 }
 
+.top-week-item:hover .thumbnail,
 .new-films-item:hover .thumbnail {
   border-color: #df8a13;
   background-color: #df8a13;
