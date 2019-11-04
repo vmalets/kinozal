@@ -92,7 +92,25 @@ h1::after {
 }
 
 h2 {
+  margin: 60px 0 45px 45px;
   font-family: "PT Serif", serif;
+}
+
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 section {
@@ -126,17 +144,20 @@ section {
   font-size: 1.15rem;
 }
 
+.top-week .row,
 .new-films .row {
   margin-left: -7.5px;
   margin-right: -7.5px;
 }
 
+.top-week-item,
 .new-films-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
+.top-week-item .thumbnail,
 .new-films-item .thumbnail {
   margin-bottom: 0;
   -webkit-transition: background-color 0.25s ease;
@@ -144,11 +165,13 @@ section {
   transition: background-color 0.25s ease;
 }
 
+.top-week-item .caption,
 .new-films-item .caption {
   text-align: center;
   height: 40px;
 }
 
+.top-week-item__title,
 .new-films-item__title {
   margin: 0;
   font-size: 1rem;
@@ -161,6 +184,7 @@ section {
      text-overflow: ellipsis;
 }
 
+.top-week-item:hover .thumbnail,
 .new-films-item:hover .thumbnail {
   border-color: #df8a13;
   background-color: #df8a13;
@@ -295,6 +319,9 @@ section {
 }
 
 @media (min-width: 576px) {
+  h2 {
+    font-size: 2.5rem;
+  }
   .header-logo__title {
     font-size: 3.5rem;
     letter-spacing: 0.33em;
@@ -326,6 +353,9 @@ section {
 }
 
 @media (max-width: 575.8px) {
+  h2 {
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
