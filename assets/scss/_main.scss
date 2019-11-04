@@ -1,8 +1,10 @@
+    .top-week .row,
     .new-films .row {
         margin-left: -$gap / 2;
         margin-right: -$gap / 2;
     }
     
+    .top-week-item,
     .new-films-item {
         padding-right: $gap / 2;
         padding-left: $gap / 2;
