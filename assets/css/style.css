@@ -15,7 +15,6 @@
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
   background-color: #165690;
-  background-color: #165690;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -67,7 +66,7 @@ html {
 }
 
 body {
-  font-family: body font-main;
+  font-family: "PT Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -81,11 +80,24 @@ a:hover, a:focus {
 }
 
 h1 {
-  font-family: h1 font-header;
+  font-family: "PT Serif", serif;
+}
+
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 h2 {
-  font-family: h2 font-header;
+  font-family: "PT Serif", serif;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -109,9 +121,49 @@ h2 {
 
 .header-logo__description {
   display: block;
-  list-style-position: 0.2em;
+  letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.new-films .row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.new-films-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+
+.new-films-item .thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.new-films-item .caption {
+  text-align: center;
+  height: 40px;
+}
+
+.new-films-item__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 22px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.new-films-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
 }
 
 .left-sidebar {
@@ -155,6 +207,9 @@ h2 {
   float: left;
   width: 75px;
   margin: 0 10px 10px 0;
+  -webkit-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .site-news-item__image img {
@@ -163,7 +218,7 @@ h2 {
 
 .site-news-item__date {
   text-align: right;
-  font-style: 0.8rem;
+  font-size: 0.8rem;
   color: #909090;
 }
 
@@ -178,6 +233,15 @@ h2 {
   -webkit-line-clamp: 2;
 }
 
+.site-news-item:hover .site-news-item__title a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
 .top-films .panel-body {
   padding-right: 0;
   padding-left: 0;
@@ -190,7 +254,7 @@ h2 {
 .top-films .badge {
   position: absolute;
   right: 10px;
-  text-outline: 12px;
+  text-justify: 12px;
 }
 
 .top-films-item {

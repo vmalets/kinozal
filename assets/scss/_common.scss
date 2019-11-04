@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: &font-main;
+    font-family: $font-main;
     font-size: 1rem;
 }
 
@@ -17,9 +17,21 @@ a {
 }
 
 h1 {
-    font-family: &font-header;
+    font-family: $font-header;
+    &::after {
+        position: absolute;
+        width: 100%;
+        margin: 0.85em 0 0 $gap;
+        content: "";
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+    }
 }
 
 h2 {
-    font-family: &font-header;
+    font-family: $font-header;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
 }

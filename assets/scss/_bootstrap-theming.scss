@@ -1,112 +1,83 @@
-  .navbar-inverse
-{
-    border-color: transparent;
-    background-color: darken($color-dark, 4%);
-    .navbar-nav
-    {
-        > li > a
-        {
-            transition: background-color .5s;
-
-            @include sm-min
-            {
-                border-radius: 4px;
-            }
-            @include sm
-            {
-                text-align: center;
-            }
-            &:focus,
-            &:hover
-            {
-                background-color: $color-primary;
-                background-color: $color-primary;
-            }
-        }
-        > .active > a
-        {
-            background-color: saturate(darken($color-primary, 14%), 15%);
-            &:focus,
-            &:hover
-            {
-                background-color: desaturate(lighten($color-primary, 15%), 40%);
-            }
-        }
-    }
-}
-
-.navbar-header
-{
-    text-align: center;
-}
-
-.navbar-toggle
-{
-    float: none;
-
-    margin-right: 0;
-}
-
-.navbar-left
-{
-    @include sm
-    {
-        margin-bottom: 0;
-    }
-    li
-    {
-        @include sm-min
-        {
-            margin: 5px 5px 5px 0;
-        }
-    }
-}
-
-.navbar-right
-{
-    @include sm
-    {
-        margin-bottom: 0;
-    }
-    li
-    {
-        @include sm-min
-        {
-            margin: 5px 0 5px 5px;
-        }
-    }
-}
-
-.panel
-{
-    margin-bottom: $gap *1.5;
-
-    border: none;
-    background-color: darken($color-light, 8%);
-    &-info > .panel-heading
-    {
-        color: $color-light;
-        border: none;
-        background-color: $color-accent;
-    }
-    &-title
-    {
-        font-size: 1.2rem;
-
-        letter-spacing: .1em;
-    }
-    &-body
-    {
-        border: 1px solid $color-gray;
-        border-radius: 0 0 4px 4px;
-    }
-}
-
-.input
-{
-    &-lg,
-    &-group-lg > .form-control
-    {
-        font-size: .875rem;
-    }
-}
+  .navbar-inverse {
+      border-color: transparent;
+      background-color: darken($color-dark, 4%);
+      .navbar-nav {
+          >li>a {
+              transition: background-color .5s;
+              @include sm-min {
+                  border-radius: 4px;
+              }
+              @include sm {
+                  text-align: center;
+              }
+              &:focus,
+              &:hover {
+                  background-color: $color-primary;
+              }
+          }
+          >.active>a {
+              background-color: saturate(darken($color-primary, 14%), 15%);
+              &:focus,
+              &:hover {
+                  background-color: desaturate(lighten($color-primary, 15%), 40%);
+              }
+          }
+      }
+  }
+  
+  .navbar-header {
+      text-align: center;
+  }
+  
+  .navbar-toggle {
+      float: none;
+      margin-right: 0;
+  }
+  
+  .navbar-left {
+      @include sm {
+          margin-bottom: 0;
+      }
+      li {
+          @include sm-min {
+              margin: 5px 5px 5px 0;
+          }
+      }
+  }
+  
+  .navbar-right {
+      @include sm {
+          margin-bottom: 0;
+      }
+      li {
+          @include sm-min {
+              margin: 5px 0 5px 5px;
+          }
+      }
+  }
+  
+  .panel {
+      margin-bottom: $gap *1.5;
+      border: none;
+      background-color: darken($color-light, 8%);
+      &-info>.panel-heading {
+          color: $color-light;
+          border: none;
+          background-color: $color-accent;
+      }
+      &-title {
+          font-size: 1.2rem;
+          letter-spacing: .1em;
+      }
+      &-body {
+          border: 1px solid $color-gray;
+          border-radius: 0 0 4px 4px;
+      }
+  }
+  
+  .input {
+      &-lg,
+      &-group-lg>.form-control {
+          font-size: .875rem;
+      }
+  }

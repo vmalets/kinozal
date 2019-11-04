@@ -25,7 +25,7 @@
     }
     &__description {
         display: block;
-        list-style-position: 0.2em;
+        letter-spacing: 0.2em;
         color: $color-light;
         font-size: 1.15rem;
         @extend %text-shadow;

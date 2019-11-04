@@ -1,3 +1,31 @@
-.new-films-item {
-    &__title {}
-}
+    .new-films .row {
+        margin-left: -$gap / 2;
+        margin-right: -$gap / 2;
+    }
+    
+    .new-films-item {
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
+        margin-bottom: $gap;
+        .thumbnail {
+            margin-bottom: 0;
+            transition: background-color 0.25s ease;
+        }
+        .caption {
+            text-align: center;
+            height: 40px;
+        }
+        &__title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+            height: 22px;
+            @include text-shortener;
+        }
+        &:hover {
+            .thumbnail {
+                border-color: $color-accent;
+                background-color: $color-accent;
+            }
+        }
+    }
