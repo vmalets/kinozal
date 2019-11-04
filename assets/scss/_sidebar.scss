@@ -1,0 +1,96 @@
+.left-sidebar {
+    margin-bottom: $gap * 4;
+    .panel:last-of-type {
+        margin: 0;
+    }
+}
+
+.vertical-slider {
+    border-radius: 4px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.site-news {
+    &-item {
+        clear: both;
+        position: relative;
+        &:not(:last-of-type) {
+            margin-bottom: $gap;
+            min-height: 85px;
+            &::after {
+                position: absolute;
+                content: "";
+                right: 0;
+                bottom: -5px;
+                width: calc(100% - 85);
+                height: 1px;
+                background-color: $color-gray;
+            }
+        }
+        &__image {
+            float: left;
+            width: 75px;
+            margin: 0 10px 10px 0;
+            img {
+                width: 100%;
+            }
+        }
+        &__date {
+            text-align: right;
+            font-style: 0.8rem;
+            color: darken($color-gray, 30%);
+        }
+        &__title {
+            margin-bottom: 10px;
+            @include block-shortener(1rem, 1.5, 50px, 2)
+        }
+    }
+}
+
+.top-films {
+    .panel-body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .list-group {
+        margin-bottom: 0;
+    }
+    .badge {
+        position: absolute;
+        right: 10px;
+        text-outline: 12px;
+    }
+    &-item {
+        background-color: transparent;
+        border-right: none;
+        border-left: none;
+        margin-right: -1px;
+        margin-left: -1px;
+        border-top: 1px solid $color-gray;
+        padding: 0;
+        a {
+            display: block;
+            padding: 10px 40px 10px $gap;
+        }
+        &:first-child {
+            border-radius: 0;
+            border-top: none;
+        }
+        &:last-child {
+            border-radius: 0;
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: $color-accent;
+            a {
+                color: $color-light;
+            }
+            .badge {
+                background-color: $color-dark;
+            }
+        }
+    }
+}
