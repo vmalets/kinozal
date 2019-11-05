@@ -57,7 +57,7 @@
   }
   
   .panel {
-      margin-bottom: $gap *1.5;
+      margin-bottom: $gap *2;
       border: none;
       background-color: darken($color-light, 8%);
       &-info>.panel-heading {

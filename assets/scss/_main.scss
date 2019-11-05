@@ -1,11 +1,14 @@
-    .top-week .row,
-    .new-films .row {
+.top-week,
+.new-films {
+    .row {
         margin-left: -$gap / 2;
         margin-right: -$gap / 2;
     }
-    
-    .top-week-item,
-    .new-films-item {
+}
+
+.top-week,
+.new-films {
+    &-item {
         padding-right: $gap / 2;
         padding-left: $gap / 2;
         margin-bottom: $gap;
@@ -16,6 +19,9 @@
         .caption {
             text-align: center;
             height: 40px;
+        }
+        &__image {
+            width: 100%;
         }
         &__title {
             margin: 0;
@@ -31,3 +37,35 @@
             }
         }
     }
+}
+
+.film-news {
+    &-item {
+        &__text {
+            text-align: justify;
+        }
+        &:hover {
+            .thumbnail {
+                background-color: lighten($color-accent, 15%);
+            }
+            h3>a {
+                color: $color-accent;
+            }
+            .btn-warning {
+                background-color: $color-accent;
+            }
+        }
+    }
+    h3>a {
+        transition: color 0.25s ease;
+    }
+    .thumbnail {
+        margin-bottom: 0;
+        transition: background-color 0.25s ease;
+    }
+    .btn-warning {
+        float: right;
+        margin-bottom: $gap * 2;
+        transition: background-color 0.25s ease;
+    }
+}
