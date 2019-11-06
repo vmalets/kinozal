@@ -61,6 +61,15 @@
   font-size: .875rem;
 }
 
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
+.embed-responsive {
+  border-radius: 4px 4px 0 0;
+}
+
 html {
   font-size: 16px;
 }
