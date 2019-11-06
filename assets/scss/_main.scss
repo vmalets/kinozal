@@ -1,37 +1,51 @@
 .top-week,
-.new-films {
-    .row {
-        margin-left: -$gap / 2;
+.new-films
+{
+    .row
+    {
         margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
     }
 }
 
 .top-week,
-.new-films {
-    &-item {
+.new-films
+{
+    &-item
+    {
+        margin-bottom: $gap;
         padding-right: $gap / 2;
         padding-left: $gap / 2;
-        margin-bottom: $gap;
-        .thumbnail {
+        .thumbnail
+        {
             margin-bottom: 0;
-            transition: background-color 0.25s ease;
+
+            transition: background-color .25s ease;
         }
-        .caption {
-            text-align: center;
+        .caption
+        {
             height: 40px;
+
+            text-align: center;
         }
-        &__image {
+        &__image
+        {
             width: 100%;
         }
-        &__title {
-            margin: 0;
+        &__title
+        {
             font-size: 1rem;
             font-weight: bold;
+
             height: 22px;
+            margin: 0;
+
             @include text-shortener;
         }
-        &:hover {
-            .thumbnail {
+        &:hover
+        {
+            .thumbnail
+            {
                 border-color: $color-accent;
                 background-color: $color-accent;
             }
@@ -39,36 +53,50 @@
     }
 }
 
-.film-news {
-    img {
+.film-news
+{
+    img
+    {
         width: 100%;
     }
-    &-item {
-        &__text {
+    &-item
+    {
+        &__text
+        {
             text-align: justify;
         }
-        &:hover {
-            .thumbnail {
+        &:hover
+        {
+            .thumbnail
+            {
                 background-color: lighten($color-accent, 15%);
             }
-            h3>a {
+            h3 > a
+            {
                 color: $color-accent;
             }
-            .btn-warning {
+            .btn-warning
+            {
                 background-color: $color-accent;
             }
         }
     }
-    h3>a {
-        transition: color 0.25s ease;
+    h3 > a
+    {
+        transition: color .25s ease;
     }
-    .thumbnail {
+    .thumbnail
+    {
         margin-bottom: 0;
-        transition: background-color 0.25s ease;
+
+        transition: background-color .25s ease;
     }
-    .btn-warning {
+    .btn-warning
+    {
         float: right;
+
         margin-bottom: $gap * 2;
-        transition: background-color 0.25s ease;
+
+        transition: background-color .25s ease;
     }
 }

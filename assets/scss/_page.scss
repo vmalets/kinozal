@@ -1,15 +1,20 @@
-.film-info {
+.film-info
+{
     font-size: 1.2em;
-    &__badge {
-        font-size: 0.8em;
-        &:not(:last-child) {
+    &__badge
+    {
+        font-size: .8em;
+        &:not(:last-child)
+        {
             margin-right: 3%;
         }
     }
 }
 
-.film-send-comment {
-    .btn {
+.film-send-comment
+{
+    .btn
+    {
         float: right;
     }
 }
