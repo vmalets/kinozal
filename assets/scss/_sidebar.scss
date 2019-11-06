@@ -1,7 +1,13 @@
 .left-sidebar {
-    margin-bottom: $gap * 4;
     .panel:last-of-type {
         margin: 0;
+    }
+    @include lg {
+        margin-bottom: $gap * 4;
+    }
+    @include md {
+        margin-top: $gap * 2.67;
+        margin-bottom: $gap * 2;
     }
 }
 

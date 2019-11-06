@@ -40,6 +40,9 @@
 }
 
 .film-news {
+    img {
+        width: 100%;
+    }
     &-item {
         &__text {
             text-align: justify;
